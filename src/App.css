@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Blackjack-modal {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes Blackjack-modal-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hand {
+  margin: 50px;
+}
+
+/* For modern browsers */
+.hand:before,
+.hand:after {
+    content:"";
+    display:table;
+}
+ 
+.hand:after {
+    clear:both;
+}
+ 
+/* For IE 6/7 (trigger hasLayout) */
+.hand {
+    zoom:1;
+}
+
+.card {
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  width: 90px;
+  height: 132px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+}
+
+/* CUSTOM CARD */
+.custom-card {
+  background: #fff;
+  border: 1px solid rgba(0,0,0);
+}
+
+.custom-card p {
+  text-align: center;
+  font: 50px/30px Georgia, Times New Roman, serif;
+}
+
+/* use all capital letters because this is what the 3rd party API does */
+.suitDIAMONDS:before, .suitDIAMONDS:after {
+  content: "♦";
+  color: #ff0000;
+}
+
+.card.suitDIAMONDS {
+  color: #ff0000;
+}
+
+.suitHEARTS:before, .suitHEARTS:after {
+  content: "♥";
+  color: #ff0000;
+}
+
+.card.suitHEARTS {
+  color: #ff0000;
+}
+
+.suitCLUBS:before, .suitCLUBS:after {
+  content: "♣";
+  color: #000;
+}
+
+.suitSPADES:before, .suitSPADES:after {
+  content: "♠";
+  color: #000;
+}
+
+div[class*='suit']:before {
+  position: absolute;
+  font-size: 20px;
+  left: 3px;
+  top: 3px;
+}
+
+div[class*='suit']:after {
+  position: absolute;
+  font-size: 20px;
+  right: 3px;
+  bottom: 3px;
+}
+
+/* SPREAD */
+.spread {
+  width: 150px;
+  height: 50px;
+  position: relative;
+}
+
+.spread > .card {
+  position: absolute;
+  top: 45;
+  left: 45;
+  -webkit-transition: top 0.3s ease, left 0.3s ease;
+  -moz-transition: top 0.3s ease, left 0.3s ease;
+  -o-transition: top 0.3s ease, left 0.3s ease;
+  -ms-transition: top 0.3s ease, left 0.3s ease;
+  transition: top 0.3s ease, left 0.3s ease;
+}
+
+.spread > .card:hover {
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+/* GROW */
+.grow > .card {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.grow > .card:hover {
+  -webkit-box-shadow: 1px 1px 7px rgba(0,0,0,0.9);
+  box-shadow: 1px 1px 7px rgba(0,0,0,0.9);
+  -webkit-transform: scale(1.05,1.05);
+  -moz-transform: scale(1.05,1.05);
+  -o-transform: scale(1.05,1.05);
+  -ms-transform: scale(1.05,1.05);
+  transform: scale(1.05,1.05);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 55px 15px;
+}
