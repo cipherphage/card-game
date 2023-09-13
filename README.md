@@ -2,7 +2,7 @@
 
 ## Explanation
 
-This is a very simple Blackjack webapp built using React for a user to play against a computer dealer. 
+This is a Blackjack webapp built using React for a user to play against a computer dealer. 
 
 ## Existing Features
 
