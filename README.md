@@ -33,7 +33,6 @@ This is a Blackjack webapp built using React for a user to play against a comput
 - Card styling used in client-side mode are from CSS Card Tricks: [https://designshack.net/articles/css/css-card-tricks/](https://designshack.net/articles/css/css-card-tricks/).
 - Create React App: [https://create-react-app.dev/](https://create-react-app.dev/).
   - Important note about Create React App as of July 2023: [https://github.com/facebook/create-react-app/issues/13080#issuecomment-1618998426] (https://github.com/facebook/create-react-app/issues/13080#issuecomment-1618998426).
-- Test-Driven Development (TDD).
 
 ## Running the app
 
