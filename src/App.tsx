@@ -90,27 +90,27 @@ function App() {
 
   return (
     <div className="App">
-      <section>
-        <h1>Blackjack: My Way</h1>
+      <section className='flex-section'>
+        <h1 className='flex-item'>Blackjack: My Way</h1>
       </section>
 
       {!(deck.cards.length === 0) &&
         <>
-          <section>
-            <h2>The House (Dealer)</h2>
+          <section className='flex-section'>
+            <h2 className='flex-item'>The House (Dealer)</h2>
             <Hand hand={dealer.hand} mode={mode}/>
           </section>
 
-          <section>
-            <h2>You (Player)</h2>
+          <section className='flex-section'>
+            <h2 className='flex-item'>You (Player)</h2>
             <Hand hand={player.hand} mode={mode} />
           </section>
         </>
       }
 
-      <section>
-        <h2>Stats</h2>
-        <div>
+      <section className='flex-section'>
+        <h2 className='flex-item'>Stats</h2>
+        <div className='flex-item'>
           <table>
             <thead>
               <tr>
@@ -135,14 +135,14 @@ function App() {
         </div>
       </section>
 
-      <section>
-        <h2>Player Actions</h2>
-        <div>
+      <section className='flex-section'>
+        <h2 className='flex-item'>Player Actions</h2>
+        <div className='flex-item'>
           <button onClick={startNewGame}>Start New Game</button>
           <button>Hit (new card)</button>
           <button onClick={stay}>Stay (end round)</button>
         </div>
-        <div>
+        <div className='flex-item'>
           Card Layout: <span>{ mode.cardLayout ? "Fan" : "Side-by-side" }</span>
           <button onClick={updateCardLayout}>Switch Card Layout</button>
           Dealer Visibility: <span>Always visible</span>

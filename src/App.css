@@ -146,9 +146,13 @@ div[class*='suit']:after {
   transform: scale(1.05,1.05);
 }
 
-section {
+.flex-section {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 55px 15px;
+}
+
+.flex-item {
+  flex-grow: 1;
+  flex-basis: 200;
 }

@@ -6,7 +6,8 @@ interface HandProps {
 }
 
 const Hand = function({ hand, mode }: HandProps) {
-  const cardLayout = mode.cardLayout ? "hand spread" : "hand grow";
+  const cname = "flex-item";
+  const cardLayout = mode.cardLayout ? cname + " hand spread" : cname + " hand grow";
 
   return <div data-testid={cardLayout} className={cardLayout}>
     {hand.map((card: card, i: number) => {
